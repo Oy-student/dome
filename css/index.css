@@ -1,0 +1,511 @@
+/* ##############=Flower###################= */
+.Flower{
+	width: 100%;
+	max-width: 1300px;
+	border: 1px solid;
+}
+.Dc{
+	height: 50px;
+	border: 1px solid;
+}
+.Dc input{
+	width: 100px;
+	height: 50px;
+	border: 1px solid;
+	float:right;
+}
+/* 这是弹出背景 */
+#popLayer{
+    display: none;
+    background-color: #B3B3B3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);/* 只支持IE6、7、8、9 */
+}
+/*弹出层*/
+#popBox {
+    display: none;
+    background-color: #FFFFFF;
+    z-index: 11;
+    width: 500px;
+    height: 500px;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    margin:auto;
+}
+#popBox .close{
+	width: 100%;
+	height: 40px;
+   	text-align: right;
+   	border: 1px solid;
+    margin-right: 5px;
+    background-color: #F8F8F8;
+}
+ 
+/*关闭按钮*/
+#popBox .close a {
+    color: #2D2C3B;
+    font-size:18px;
+    display: block;
+    padding: 0 20px;
+    margin-top:5px; 
+}
+header{
+	width: 830px;
+/* 	border: 1px solid; */
+	clear: both;
+}
+.H_left{
+	width: 250px;
+	height: 100px;
+	position: relative;
+	margin:0;
+	/* border: 1px solid; */
+	float: left;
+}
+.H_left img{
+	width: 130px;
+	height: 100px;
+
+}
+.H_left span{
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	top: 35px;
+	left: 120px;
+	color: #EF9A9E;
+	clear: both;
+}
+.H_cont{
+	width: 250px;
+	height: 100px;
+/* 	border:1px solid; */
+	float: left;
+	position: relative;
+}
+.H_cont input{
+	width: 240px;
+	height: 30px;
+	border: 1px solid #EF9A9E;
+	margin-top: 35px;
+	padding:10px 10px;
+}
+.H_cont button{
+	width: 50px;
+	height: 30px;
+	position:absolute;
+	right: 0;
+	top:35px; 
+	border: none;
+	background-color: #EF9A9E;
+	color:white;
+}
+.H_right{
+	width: 280px;
+	height: 100px;
+/* 	border: 1px solid; */
+}
+.img_l{
+	width: 120px;
+	height: 30px;
+	/* border: 1px solid; */
+	margin-top: 35px;
+	margin-left: 15px;
+	position: relative;
+}
+.img_l img{
+	width: 30px;
+	height: 30px;
+	/* border: 1px solid; */
+}
+.img_l span{
+	font-size: 10px;
+	position: absolute;
+	top: 6px;
+	left: 33px;
+}
+section:first-child{
+	width:100%;
+	/* border: 1px solid;  */
+}
+.Hea{
+	width: 100%;
+	height: 50px;
+	border-bottom:1px solid #EF9A9E;  
+}
+.Hea ul{
+	width: 650px;
+	height: 50px;
+/* 	border: 1px solid; */
+	margin-left:450px; 
+}
+.Hea ul li{
+	width: 100px;
+	height: 30px;
+	float: left;
+	/* border: 1px solid; */
+	margin-left:0px;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 30px;
+}
+.lub{
+	width: 1300px;
+	height: 600px;
+	/* border: 1px solid; */
+	margin-left: -1px;
+	background:url(../images/IM.jpg) no-repeat 0px 0px;
+	background-size: 100% 100%;
+	position: relative;
+}
+aside{
+	width: 300px;
+	border: 1px solid #EF9A9E;
+	margin:0;
+	float: left;
+	position: absolute;
+	bottom: 21px;
+	left: 130px;
+	background-color: white;
+}
+.one{
+	width: 100%;
+	height: 50px;
+	background-color: #EF9A9E;
+}
+.one p{
+	font-size: 18px;
+	color: white;
+	margin-left:20px;
+	line-height: 50px;
+}
+.tow{
+	padding: 10px;
+	line-height: 20px;
+}
+.tow ul{
+	width: 100%;
+	border: 1px solid;
+}
+.tow li{
+	width: 80px;
+	height: 30px;
+	float: left;
+	border: 1px solid;
+	text-align: center;
+	line-height: 30px; 
+	margin:5px 0px 5px 8px;
+}
+ hr{
+	width: 250px;
+}
+.three{
+	width: 100%;
+	height: 45px;
+}
+.three p{
+	font-size: 18px;
+	text-align: center;
+	line-height: 45px;
+	font-weight: bold;
+	color: #EF9A9E;
+}
+.box{
+	float: left;
+	margin-left:480px;
+	margin-top: 192px;
+
+}
+
+.inner{
+    width: 525px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+.inner img{
+    width: 525px;
+    height: 250px;
+    vertical-align: top
+}
+.inner ul {
+    width: 1000%;
+    position: absolute;
+    list-style: none;
+    left:0;
+    top: 0;
+}
+.inner li{
+    float: left;
+}
+.inner ol {
+    position: absolute;
+    height: 20px;
+    right: 100px;
+    bottom: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.inner ol li{
+	border: 1px solid;
+    display: inline-block;
+   	width: 50px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+ol .current{
+    background-color: red;
+}
+#arr{
+    display: none;
+}
+#arr span{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 40%;
+            margin-top: -20px;
+            background: #fff;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #000;
+            opacity: 0.5;
+            border: 1px solid #fff;
+        }
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+
+section:last-child{
+	width: 100%;
+}
+.xianshi{
+	width: 100%;
+	border: 1px solid;
+}
+.xianshi ul{
+	width: 88%;
+	padding: 5px;
+}
+.xianshi li{
+	width: 280px;
+	height: 280px;
+	border: 1px solid;
+	float: left;
+}
+ .se-kl {
+    width: 250px;
+    height: 275px;
+    background-color: #e83632;
+    position: relative;
+    margin:0px auto;
+}
+
+.se-cn {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+}
+
+.se-en {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.se-io {
+    width: 20px;
+    height: 33px;
+    position: absolute;
+    background: url(../images/seckill.png) no-repeat;
+    background-position: -32.5px 0;
+    background-size: 52.5px 40px;
+    left: 115px;
+    top: 126px;
+    display: block;
+}
+
+.se-info {
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.se-count {
+    position: absolute;
+    top: 212px;
+    left: 58px;
+    height: 40px;
+    border: 1px solid;
+}
+
+.se-day {
+    display: none;
+}
+
+.se-hour,.se-min,.se-sec {
+    position: relative;
+    background-color: #2f3430;
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+.se-txt {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.se-txt:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e83632;
+}
+.Ex{
+	width: 80%;
+	padding:10px
+}
+.Ex_top{
+	height: 50px;
+	border:1px solid;
+	font-weight: bold;
+}
+.Ex_top p{
+	font-size: 20px;
+	margin-left: 30px;
+	line-height: 45px;
+
+}
+.Ex_top span{
+	font-size: 14px;
+	margin-left: 5px;
+}
+.Ex_left{
+	width: 30%;
+	height: 650px;
+	background-color: #EF9A9E;
+	border: 1px solid;
+}
+.Ex_left img{
+	width: 100%;
+	height: 500px;
+}
+.Ex_left button{
+	width: 180px;
+	height: 50px;
+	background:rgba(0,0,0,0);
+	border: 1px solid white;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	margin-left: 70px;
+	margin-top:40px; 
+}
+.Ex_right{
+	width: 70%;
+}
+.Ex_right ul{
+	width: 100%;
+}
+.Ex_right ul li{
+	width: 235px;
+	height: 325px;
+	border: 1px solid gray;
+	position: relative;
+	float: left;
+	margin-left: 2.5px;
+}
+.Ex_right ul li img{
+	width: 233px;
+}
+.Ex_right ul li a{
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	margin-top:10px;
+}
+.Ex_right ul li i{
+	display: block;
+	text-align: center;
+	line-height: 35px;
+}
+.display {
+	width: 100%;
+	height: 325px;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.Ex_right ul li:hover .display{
+	display: block;
+	background-color:gray;
+	color: white;
+	background: rgba(0,0,0,0.6);
+	line-height: 30px;
+}
+footer{
+	width: 100%;
+	border: 1px solid;
+}
+.B_t{
+	height: 100px;
+	border: 1px solid
+}
+.B_t ul{
+	width: 80%;
+	height: 100px;
+	border: 1px solid red;
+}
+.B_b{
+	border: 1px solid;
+}
+.B_b1{
+	width: 50%;
+	height:300px;
+	border: 1px solid;
+}
+.B_b2{
+	width: 50%;
+	height:300px;
+	border: 1px solid red;
+}

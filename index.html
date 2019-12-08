@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+	<!-- 鲜花网站整体布局 -->
+	<div class="Flower">
+		<!-- 弹出框部分 -->
+		<div class="Dc">
+				<input type="button" name="popBox" value="弹出框" onclick="popBox()">
+				<div id="popLayer"></div>
+				<div id="popBox">
+				    <div class="close">
+				        <a href="javascript:void(0)" onclick="closeBox()">关闭</a>
+				    </div>
+				    <div class="content">这是弹出内容</div>
+				</div>
+		</div>
+		<!-- 头部部分 -->
+		<header class="clearfix">
+			<div class="H_left">
+				<img src="images/LOVE.png" alt="">
+				<span>鲜花网</span>
+			</div>
+			<div class="H_cont">
+				<input type="text" placeholder="商品关键字">
+				<button>搜索</button>
+			</div>
+			<div class="H_right f_right">
+				<div class="img_l f_left">
+					<img src="images/LOVE.png" alt="">
+					<span>400-666-888</span>
+				</div>
+				<div class="img_l f_left">
+					<img src="images/LOVE.png" alt="">
+					<span>电话客服</span>
+				</div>
+			</div>
+		</header>
+		<!-- 中间导航以及轮播图部分 -->
+		<section class="clearfix">
+			<div class="Hea">
+				<ul>
+					<li><a href="">鲜花1</a></li>
+					<li><a href="">鲜花2</a></li>
+					<li><a href="">鲜花3</a></li>
+					<li><a href="">鲜花4</a></li>
+					<li><a href="">鲜花5</a></li>
+					<li><a href="">鲜花6</a></li>
+				</ul>
+			</div>
+			<div class="lub">
+				<aside>
+					<div class="one">
+						<p>全部商品导购</p>
+					</div>
+					<div class="tow">
+						<p>全部商品导购</p>
+						<ul class="clearfix">
+							<li><a href="">商品导购1</a></li>
+							<li><a href="">商品导购2</a></li>
+							<li><a href="">商品导购3</a></li>
+							<li><a href="">商品导购4</a></li>
+							<li><a href="">商品导购5</a></li>
+							<li><a href="">商品导购6</a></li>
+							<li><a href="">商品导购7</a></li>
+							<li><a href="">商品导购8</a></li>
+							<li><a href="">商品导购9</a></li>
+						</ul>
+					</div>
+					<div class="tow">
+						<p>全部商品导购</p>
+						<ul class="clearfix">
+							<li><a href="">商品导购1</a></li>
+							<li><a href="">商品导购2</a></li>
+							<li><a href="">商品导购3</a></li>
+							<li><a href="">商品导购4</a></li>
+							<li><a href="">商品导购5</a></li>
+							<li><a href="">商品导购6</a></li>
+						</ul>
+					</div>
+					<div class="tow">
+						<p>全部商品导购</p>
+						<ul class="clearfix">
+							<li><a href="">商品导购1</a></li>
+							<li><a href="">商品导购2</a></li>
+							<li><a href="">商品导购3</a></li>
+						</ul>
+					</div>
+					<div class="tow">
+						<p>全部商品导购</p>
+						<ul class="clearfix">
+							<li><a href="">商品导购1</a></li>
+							<li><a href="">商品导购2</a></li>
+							<li><a href="">商品导购3</a></li>
+							<li><a href="">商品导购4</a></li>
+							<li><a href="">商品导购5</a></li>
+							<li><a href="">商品导购6</a></li>
+						</ul>	
+					</div>
+					<div class="three">
+						<p>礼品/公仔/绿植</p>
+						<hr>
+					</div>
+					<div class="three">
+						<p>礼品/公仔/绿植</p>
+					</div>
+				</aside>
+				<div class="box clearfix" id="box">
+					<div class="inner">
+				        <!--轮播图-->
+				        <ul>
+				            <li><a href="#"><img src="images/1.jpg" alt=""></a></li>
+				            <li><a href="#"><img src="images/2.jpg" alt=""></a></li>
+				            <li><a href="#"><img src="images/3.jpg" alt=""></a></li>
+				            <li><a href="#"><img src="images/4.jpg" alt=""></a></li>
+				            <li><a href="#"><img src="images/5.jpg" alt=""></a></li> 
+				        </ul>
+				        <ol class="bar">				 
+				        </ol>
+				        <!--左右焦点-->
+				        <div id="arr">
+				            <span id="left"><</span>
+				            <span id="right">></span>
+				        </div>
+    				</div>
+    			</div>
+			</div>
+		</section>
+		<!-- 这是中间图片展示部分 -->
+		<section class="clearfix">
+			<div class="xianshi">
+				<ul class="clearfix">
+					<li>
+						<div class="se-kl">
+							<div class="se-cn">倒计时</div>
+							<div class="se-en">COUNT DOWN</div>
+							<i class="se-io"></i>
+							<div class="se-info">距离结束还剩</div>
+							<div class="se-count">
+								<div class="se-day"></div>
+								<div class="se-hour"><span class="se-txt">00</span></div>
+								<div class="se-min"><span class="se-txt">00</span></div>
+								<div class="se-sec"><span class="se-txt">00</span></div>
+							</div>
+						</div>
+					</li>
+					<li>模块1</li>
+					<li>模块2</li>
+					<li>模块3</li>
+				</ul>
+			</div>
+			<div class="Ex clearfix">
+				<div class="Ex_top">
+					<p>爱情鲜花<span>送给砰然心动的人</span></p>
+				</div>
+				<div class="Ex_left f_left">
+					<img src="images/Gr1.jpg" alt="">
+					<button>爱情鲜花专区>></button>
+				</div>
+				<div class="Ex_right f_right">
+					<ul class="clearfix">
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="Ex clearfix">
+				<div class="Ex_top">
+					<p>长辈鲜花<span>送给父母/长辈/恩师/</span></p>
+				</div>
+				<div class="Ex_left f_left">
+					<img src="images/Gr2.jpg" alt="">
+					<button>爱情鲜花专区>></button>
+				</div>
+				<div class="Ex_right f_right">
+					<ul class="clearfix">
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="Ex clearfix">
+				<div class="Ex_top">
+					<p>爱情鲜花<span>送给砰然心动的人</span></p>
+				</div>
+				<div class="Ex_left f_left">
+					<img src="images/Gr3.jpg" alt="">
+					<button>爱情鲜花专区>></button>
+				</div>
+				<div class="Ex_right f_right">
+					<ul class="clearfix">
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="Ex clearfix">
+				<div class="Ex_top">
+					<p>爱情鲜花<span>送给砰然心动的人</span></p>
+				</div>
+				<div class="Ex_left f_left">
+					<img src="images/Gr3.jpg" alt="">
+					<button>爱情鲜花专区>></button>
+				</div>
+				<div class="Ex_right f_right">
+					<ul class="clearfix">
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="Ex clearfix">
+				<div class="Ex_top">
+					<p>爱情鲜花<span>送给砰然心动的人</span></p>
+				</div>
+				<div class="Ex_left f_left">
+					<img src="images/Gr3.jpg" alt="">
+					<button>爱情鲜花专区>></button>
+				</div>
+				<div class="Ex_right f_right">
+					<ul class="clearfix">
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+						<li>
+							<img src="images/1.jpg" alt="">
+							<a href="#">爱情--牵手一生</a>
+							<i>￥421.00</i>
+							<div class="display">
+								类 别：鲜花<br> 
+								编 号：9012446<br>
+								材 料：浅粉满天星1扎<br>
+								包 装：粉蓝人造纸9张、浅粉色罗纹玫瑰金丝带2米<br>
+								花 语：我携满天星辰赠你，好教你不逊色人间错落烟火；只有这满天星辰，足够与你相配。<br>
+								附 送：下单填写留言，即免费赠送精美贺卡！<br>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- 这是底部内容 -->
+		<footer class="clearfix">
+			<div class="B_t">
+				<ul>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+			<div class="B_b">
+				<div class="B_b1 f_left">1</div>
+				<div class="B_b2 f_left">2</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

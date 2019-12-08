@@ -1,0 +1,54 @@
+*{
+	padding: 0px;
+	margin: 0px auto;
+	box-sizing:border-box;
+}
+body{
+	font-size:14px;
+	font-family: "MicroSoft YaHei",sans-serif;
+}
+
+[class^="icon_"]{
+	background: url(../images/sprites.png) no-repeat;
+	background-size:200px 200px;
+}
+
+a{
+	text-decoration: none;
+	color:#333333;
+
+}
+
+a:hover{
+	text-decoration: none;
+	/*color: #333333;*/
+	
+}
+
+ul,ol{
+	list-style:none;
+
+}
+
+input{
+	border:none;
+	outline:none;
+	-webkit-appearance:none;
+}
+
+.clearfix::before,
+
+.clearfix::after {     
+	content:"";     
+	clear:both;     
+	height: 0px;     
+	line-height: 0px;     
+	visibility: hidden;     
+	display: block; 
+} 
+.f_left{
+	float: left;
+}
+.f_right{
+	float:right;
+}
